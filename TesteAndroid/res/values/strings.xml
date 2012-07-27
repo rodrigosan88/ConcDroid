@@ -8,4 +8,5 @@
     <string name="button_questoes">Questoes</string>
     <string name="button_estatisticas">Estatisticas</string>
 	<string name="button_sair">Sair</string>
+	<string name="texto_estat">TESTE</string>
 </resources>

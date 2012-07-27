@@ -29,17 +29,23 @@ public class MainActivity extends Activity {
     
     public void actQuestoes(View view)
     {
-    	/* Uma objeto do tipo Intent provê ligação em tempo de execução 
+    	/* Uma objeto do tipo Intent prov√™ liga√ß√£o em tempo de execu√ß√£o 
     	 * entre dois componentes, tais como objetos Activity 
     	 *
-    	 * A Classe Intent reprsenta a intenção de um aplicativo em fazer alguma coisa.
-    	 * Você pode usar um Intent para uma grande variedades de tarefas, mas na maior
-    	 * parte elas são usadas para iniciar uma outra atividade.
+    	 * A Classe Intent reprsenta a intenÔøΩ‚Äπo de um aplicativo em fazer alguma coisa.
+    	 * VocÔøΩ pode usar um Intent para uma grande variedades de tarefas, mas na maior
+    	 * parte elas s‚Äπo usadas para iniciar uma outra atividade.
     	 */
     	Intent intent = new Intent(this, DisplayMessageActivity.class);
     	Button btQuest = (Button) findViewById(R.id.button_questoes);
     	String message = (String)btQuest.getText();
     	intent.putExtra(EXTRA_MESSAGE, message);
+    	startActivity(intent);
+    }
+    
+    public void actEstatisticas(View view)
+    {
+    	Intent intent = new Intent(this, Estatisticas.class);
     	startActivity(intent);
     }
     

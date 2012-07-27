@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplayMessageActivity"/>
+        <activity android:name=".Estatisticas"/>
     </application>
 
 </manifest>
